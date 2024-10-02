@@ -5,6 +5,12 @@
 	then
  		let result=$1+$2
  		echo $result
+   		if [ $1 -gt $2 ]
+     		then
+       			echo "$1 eh o maior"
+	 	else
+   			echo "$2 eh o maior"
+      		fi
 	else
 		 echo "Número de parâmetros inválido. Informe dois números"
 	fi
